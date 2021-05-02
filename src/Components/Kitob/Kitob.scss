@@ -1,0 +1,10 @@
+.tool-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(100, 90, 83);
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}

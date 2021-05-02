@@ -1,0 +1,102 @@
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: #2f4f4f;
+    margin-top: 50px;
+    // overflow: hidden;
+    // display: flex;
+    .wrapper {
+        display: flex;
+        .card-img1 {
+            box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.39);
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 200px;
+            height: 250px;
+            object-fit: contain;
+        }
+        .card-img2 {
+            box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.39);
+            margin-top: 20px;
+            margin-left: 20px;
+            width: 0;
+            height: 250px;
+            object-fit: contain;
+            // display: none;
+            transition: all ease 0.5s;
+        }
+    }
+    .wrapper.opened {
+        .card-img1 {
+            display: none;
+        }
+        .card-img2 {
+            width: 200px;
+            // display: block;
+        }
+    }
+
+    .button {
+                left: 0;
+                right: 0;
+                bottom: 4px;
+                margin: auto;
+                display: block;
+                background: #F67E7E;
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                padding: 20px;
+                box-sizing: border-box;
+                text-align: center;
+                position: relative;
+                transition: all ease 0.5s;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
+                & .plus__img1 {
+                    // color: #012F34;
+                    width: 16px;
+                    height: 16px;
+                    font-weight: bold;
+                    font-weight: bolder;
+                    font-size: 20px;
+                    display: block;
+                    position: absolute;
+                    transform: rotate(90deg);
+                    top: 0;
+                    bottom: 0;
+                    left: 13.5px;
+                    right: 0;
+                    margin: auto;
+                }
+
+                & .plus__img2{
+                    // color: #012F34;
+                    display: block;
+                    font-size: 20px;
+                    font-weight: bold;
+                    font-weight: bolder;
+                    width: 16px;
+                    height: 16px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 14px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+           }
+           .button.opened {
+               background-color: blue;
+               .plus__img1 {
+                   transform: rotate(45deg);
+               }
+               .plus__img2 {
+                   transform: rotate(45deg);
+               }
+           }
+}

@@ -1,0 +1,62 @@
+
+video {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    z-index: 2;
+    width: 400px;
+    height: auto;
+}
+.section1 {
+    background-image: url('../../Assets/images/bg_brick.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+
+    h2 {
+        padding-top: 20px;
+        width: 350px;
+        text-align: center;
+        color: rgb(31, 31, 168);
+    }
+    p {
+        width: 600px;
+        font-size: 20px;
+        font-weight: bolder;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        color: rgb(0, 0, 0);
+        span {
+            color: rgb(38, 0, 255);
+        }
+
+    }
+    .last-p {
+        margin: 0;
+    }
+    .logo1 {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        border: 1px solid #8a8686;
+        // object-fit: contain;
+        margin: 20px 0 0 20px ;
+    }
+    .logo2 {
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        margin: 20px 0 0 20px ;
+        // object-fit: contain;
+        // padding: 20px 0 0 20px;
+    }
+    .b-img {
+        position: absolute;
+        right: 0;
+        overflow: hidden;
+        height: 100%;
+
+    }
+
+}
